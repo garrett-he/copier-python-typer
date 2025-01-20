@@ -15,7 +15,7 @@ classifiers = [
     "Programming Language :: Python :: {{ i }}",{% endfor %}
 ]
 dependencies = [
-    "typer (>=0.15.2,<1.0.0)",
+    "typer>=0.15.2",
 ]
 
 [project.urls]
@@ -26,13 +26,13 @@ changelog = "https://github.com/{{ vcs_github_path }}/blob/main/CHANGELOG.md"
 
 [dependency-groups]
 dev = [
-    "chance (>=0.110,<0.111)",
-    "pre-commit (>=4.1.0,<5.0.0)",
-    "pylint (>=3.3.4,<4.0.0)",
-    "pytest (>=8.3.4,<9.0.0)",
-    "pytest-cov (>=6.0.0,<7.0.0)",
+    "chance>=0.110",
+    "pre-commit>=4.1.0",
+    "pylint>=3.3.4",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
     {% if with_tox %}
-    "tox (>=4.23.2,<5.0.0)",
+    "tox>=4.23.2",
     {% endif %}
 ]
 
